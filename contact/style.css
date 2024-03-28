@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+body{
+    margin: 0px;
+}
+.main{
+    color: wheat;
+    background-color: rebeccapurple;
+    display: flex;
+    font-family: Josefin Sans;
+}
+.sub1{
+    height: 100%;
+    width: 50%;
+    padding-left: 0 0 0 20px;
+}
+.sub1 img{
+    padding: 23px;
+   height: 90%;
+   width: 90%;
+   
+}
+.sub2{
+    height: 100%;
+    width: 50%;
+    padding: 16px 64px 0 0 ;
+}
+h3{
+    font-size: 30px;
+}
+h2{
+    font-size: 40px;
+}
+h1{
+    font-size: 60px;
+}
+h1 span{
+    margin-left: 200px;
+}
+p{
+    font-size: 24px;
+    line-height: 1.3;
+}
+.coding{
+    font-size: 20px;
+    padding: 8px 16px;
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    font-family: Josefin Sans;
+    animation: blik 0.5s ease-in-out infinite;
+}
+.coding:hover{
+    background-color: wheat;
+ animation: none;
+}
+@keyframes blik {
+    50%{
+        box-shadow: 4px 4px 8px 8px #000;
+        color: white;
+    }
+    100%{
+        box-shadow: 2px 2px 4px 4px #000;   
+    }
+}
