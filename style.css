@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
-    --bg:#474F7A;
+    --bg:#202040;
     --text-head:#FFF3CF;
     --box-color:#fff;
-    --box-text:#86A7FC;
+    --box-text:#202040;
     --url-color:#86A7FC;
     --footer:#4B5D67;
 }
@@ -13,7 +14,7 @@
     box-sizing: border-box;
     line-height: 1.5;
     transition: all .3s ease-in-out;
-    font-family: Open Sans;
+    font-family: Montserrat;
   }
   
 body{
@@ -57,11 +58,13 @@ body{
     padding: 10px 0px ;
 }
 .box-text{
+    font-family: Montserrat;
     text-align: center;
     padding: 0px 40px 0px 40px;
     font-size: 16px;
 }
 .short{
+    font-family: Montserrat;
     font-weight: bold;
     background-color: var(--box-text);
     color: var(--box-color);
@@ -71,12 +74,14 @@ body{
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     cursor: pointer;
+    min-width: 150px;
 }
 .short:hover{
    color: var(--box-color);
     background-color: var(--footer);
 }
 .shortIn{
+    font-family: Montserrat;
     width: 450px;
     font-size: 16px;
     padding: 12px 12px;

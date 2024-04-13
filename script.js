@@ -37,6 +37,9 @@ xhr.send(data);
 }
 function copy(){
   copyToClipboard(document.getElementById("shorten-url").value);
+  document.getElementById("copp").value="Copied";
+  document.getElementById("copp").style.backgroundColor="green";
+  document.getElementById("copp").style.pointerEvents="none";
 }
 function copyToClipboard(text) {
   // Create a new text element
@@ -49,6 +52,7 @@ function copyToClipboard(text) {
   textElement.select();
   // Copy the text to the clipboard
   document.execCommand('copy');
+
   // Remove the text element from the DOM
   document.body.removeChild(textElement);
 }
