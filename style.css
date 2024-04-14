@@ -164,6 +164,15 @@ a{
 .another a{
 color: white;
 }
+::-webkit-scrollbar{
+    background:linear-gradient(#014379,rgb(25, 25, 55));
+    width: 10px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background:white;  
+    border-radius: 10px;
+}
 @media only screen and (max-width: 600px) {
     .box-text{
         padding: 8px;
