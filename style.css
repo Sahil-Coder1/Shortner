@@ -112,6 +112,9 @@ body{
 .hightlights li i{
     font-size: 55px;
 }
+.hightlights li i:hover{
+    color: #0D9276;
+}
 .hightlights ul li p{
     padding: 0px 8px;
 }
@@ -126,11 +129,13 @@ body{
 }
 .footer{
     background-color: var(--footer);
+    min-height: 100px;
     height: auto;
     width: 100%;
     padding: 10px 0px;
     position: absolute;
     border-top: 4px solid var(--url-color);
+    align-content: center;
 }
 .footer p{
     color: var(--text-head);
