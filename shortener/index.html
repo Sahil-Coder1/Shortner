@@ -1,66 +1,119 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spoo.Me - URL Shortner</title>
-    <link rel="stylesheet" href="../style.css">
-    <link rel="icon" href="../images/icon.png">
+    <meta name="description" content="Spoo.Me - A fast and easy URL shortener to shorten long URLs and make them more shareable.">
+    <meta name="keywords" content="URL shortener, link shortener, short URLs, shorten long links, Spoo.Me, secure shortener">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Spoo.Me - URL Shortener</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../images/icon.png" type="image/png">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <meta name="keywords" content="URL shortener, link shortener, link shrinker, shorten long URL,links clickable,Spoo.Me - URL Shortner">
-
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Nunito+Sans:opsz,wght@6..12,300&family=Open+Sans&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Nunito+Sans:opsz,wght@6..12,300&family=Open+Sans&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="../style.css">
 </head>
+
 <body onload="short()">
-    <h1 class="main-head">Spoo.Me - URL Shortner</h1>
+    <!-- Main Header -->
+    <h1 class="main-head">Spoo.Me - URL Shortener</h1>
+
+    <!-- URL Shortening Lottie Animation -->
     <div class="shorted-url" style="background-color:#f2f2f2;" id="remov">
         <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-   <center> <dotlottie-player src="https://lottie.host/7c2e530a-dffd-4480-af32-2ad2a1c0f8d5/c7JIphF9NQ.json" background="transparent" speed="1" style="width: 250px; height: 250px;" loop autoplay></dotlottie-player></center>    </div>
+        <center>
+            <dotlottie-player 
+                src="https://lottie.host/7c2e530a-dffd-4480-af32-2ad2a1c0f8d5/c7JIphF9NQ.json" 
+                background="transparent" 
+                speed="1" 
+                style="width: 250px; height: 250px;" 
+                loop autoplay>
+            </dotlottie-player>
+        </center>
+    </div>
+
+    <!-- Shortened URL Section -->
     <div class="shorted-url" style="display: none;" id="shorted-url">
-        <h2 class="success">URL Shorted Successfully</h2>
-        <div><input class="shortIn" style="margin: 0 8px;" type="url" id="shorten-url" value=""  disabled><input class="short" id="copp" type="submit" onclick="copy()" value="Copy Short URL"></div><br>
-        <p class="box-text">Long URL: <a id="long-url" style="display: block;  padding: 0px 16px 16px 16px; width: 100%; overflow-wrap: break-word;"href='#'></a></p>
-        <button class="another"><a href="..">Another Url</a></button><br><br>
-       </div>
-      
-    <div class="shortner-details">
-        
-<h2>Simple and fast URL shortener!</h2>
-Spoo.Me - URL Shortner allows to shorten long links from <a href="https://www.instagram.com/">Instagram</a>,<a href="https://www.facebook.com/"> Facebook</a>, <a href="https://www.youtube.com/"> YouTube </a>,<a href="https://www.youtube.com/"> Twitter</a>, <a href="https://www.youtube.com/"> Linked In</a>,<a href="https://www.youtube.com/">  WhatsApp</a>, <a href="https://www.youtube.com/"> TikTok</a>, blogs and sites. Just paste the long URL and click the Shorten URL button. On the next page, copy the shortened URL and share it on sites, chat and emails.
-<br><br>
-<h2>Shorten and share</h2>
-Your shortened URLs can be used in publications, documents, advertisements, blogs, forums, instant messages, and other locations.
-    </div>
-    <div class="hightlights">
-   <ul type="none">
-    <li>
-        <i class="fas fa-thumbs-up"></i>
-        <h3>Easy</h3>
-        <p>Spoo.Me - URL Shortner is easy and fast, enter the long link to get your shortened link</p>
-    </li>
-    <li>
-        <i class="fas fa-link"></i>
-        <h3>Shortened</h3>
-        <p>Use any link, no matter what size, Spoo.Me - URL Shortner always shortens</p>
-    </li>
-    <li>
-        <i class="fas fa-shield-alt"></i>
-        <h3>Secure</h3>
-        <p>It is fast and secure, our service has HTTPS protocol and data encryption</p>
-    </li>
-   </ul>
-    </div>
-        <div class="footer">
-            <p>© 2024 Spoo.Me - URL Shortner</p>
-            <ul type="none">
-                <li><a href="."> Spoo.Me</a></li>
-                <li><a href="../terms-and-conditions/">Terms of Service</a></li>
-                <li><a href="../privacy-policy/">Privacy</a></li>
-                <li><a href="../contact/">Contact</a></li>
-            </ul>
+        <h2 class="success">URL Shortened Successfully</h2>
+        <div>
+            <input class="shortIn" style="margin: 0 8px;" type="url" id="shorten-url" value="" disabled>
+            <input class="short" id="copp" type="submit" onclick="copy()" value="Copy Short URL">
         </div>
+        <br>
+        <p class="box-text">Long URL: 
+            <a id="long-url" style="display: block; padding: 0px 16px 16px 16px; width: 100%; overflow-wrap: break-word;" href='#'></a>
+        </p>
+        <button class="another">
+            <a href="..">Another URL</a>
+        </button>
+        <br><br>
+    </div>
+
+    <!-- URL Shortener Details Section -->
+    <div class="shortner-details">
+        <h2>Simple and fast URL shortener!</h2>
+        <p>
+            Spoo.Me - URL Shortener allows you to shorten long links from 
+            <a href="https://www.instagram.com/">Instagram</a>, 
+            <a href="https://www.facebook.com/">Facebook</a>, 
+            <a href="https://www.youtube.com/">YouTube</a>, 
+            <a href="https://www.twitter.com/">Twitter</a>, 
+            <a href="https://www.linkedin.com/">LinkedIn</a>, 
+            <a href="https://www.whatsapp.com/">WhatsApp</a>, 
+            <a href="https://www.tiktok.com/">TikTok</a>, blogs, and sites. 
+            Just paste the long URL and click the Shorten URL button. On the next page, copy the shortened URL and share it on sites, chat, and emails.
+        </p>
+        <h2>Shorten and share</h2>
+        <p>
+            Your shortened URLs can be used in publications, documents, advertisements, blogs, forums, instant messages, and other locations.
+        </p>
+    </div>
+
+    <!-- Highlights Section -->
+    <div class="hightlights">
+        <ul type="none">
+            <li>
+                <i class="fas fa-thumbs-up"></i>
+                <h3>Easy</h3>
+                <p>Spoo.Me - URL Shortener is easy and fast. Enter the long link to get your shortened link.</p>
+            </li>
+            <li>
+                <i class="fas fa-link"></i>
+                <h3>Shortened</h3>
+                <p>Use any link, no matter what size, Spoo.Me - URL Shortener always shortens.</p>
+            </li>
+            <li>
+                <i class="fas fa-shield-alt"></i>
+                <h3>Secure</h3>
+                <p>Fast and secure. Our service uses HTTPS protocol and data encryption.</p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>© 2024 Spoo.Me - URL Shortener</p>
+        <ul type="none">
+            <li><a href=".">Spoo.Me</a></li>
+            <li><a href="../terms-and-conditions/">Terms of Service</a></li>
+            <li><a href="../privacy-policy/">Privacy</a></li>
+            <li><a href="../contact/">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- External Script (deferred for better performance) -->
+    <script src="../script.js" defer></script>
 </body>
-<script src="../script.js"></script>
+
 </html>
