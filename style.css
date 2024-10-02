@@ -169,7 +169,7 @@ a {
 
 .another {
     background-color: var(--bg);
-    color: var(--box-color);
+    color: #fff;
     border: none;
     padding: 10px 20px;
     font-size: 18px;
@@ -178,6 +178,7 @@ a {
 }
 
 .another:hover {
+    color: var(--focus-color);
     background-color: var(--footer);
 }
 
