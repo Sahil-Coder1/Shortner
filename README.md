@@ -1,7 +1,6 @@
 # URL-Shortner
 
-I have developed this Project as a Practice Project. 
-I love making websites and Android apps, and I really enjoy designing them. That's why I chose to use JavaScript to work on this project.
+This URL Shortener application leverages the Spoo.me API to shorten long URLs, providing a fast, reliable, and user-friendly experience. Hosted on Firebase, this project showcases my ability to integrate cutting-edge technologies to deliver scalable and secure solutions.
 
 # Features
 
