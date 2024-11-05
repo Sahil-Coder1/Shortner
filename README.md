@@ -18,4 +18,4 @@ I love making websites and Android apps, and I really enjoy designing them. That
 
 # Live Deployment
 
-You can visit the deployment here: ([Open Here](https://trial-f3b86.web.app))
+You can visit the deployment here : ([Open Here](https://trial-f3b86.web.app))
