@@ -6,7 +6,7 @@ function send() {
 function short() {
   setTimeout(function () {
     var uurl = getData();
-    const url = "https://spoo.me/";
+    const url = "https://spoo.me";
     const data = new URLSearchParams();
     data.append("url", uurl);
 
