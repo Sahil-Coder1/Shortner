@@ -25,7 +25,9 @@ function short() {
           document.getElementById("shorten-url").value = jsonResponse.short_url;
           document.getElementById("long-url").innerHTML = uurl;
           document.getElementById("long-url").href = uurl;
-        } else {
+        }
+        else
+        {
           alert("An Error Occured \nTry after some time");
         }
       }
