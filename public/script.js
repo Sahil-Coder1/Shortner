@@ -26,7 +26,7 @@ function short() {
           document.getElementById("long-url").innerHTML = uurl;
           document.getElementById("long-url").href = uurl;
         } else {
-          alert("An Error Occured \nTry After Some Time");
+          alert("An Error Occured \nTry after some time");
         }
       }
     };
