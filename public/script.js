@@ -42,18 +42,11 @@ function copy() {
   document.getElementById("copp").style.pointerEvents = "none";
 }
 function copyToClipboard(text) {
-  // Create a new text element
   var textElement = document.createElement("textarea");
-  // Set the value of the text element to the text to be copied
   textElement.value = text;
-  // Add the text element to the DOM
   document.body.appendChild(textElement);
-  // Select the text element
   textElement.select();
-  // Copy the text to the clipboard
   document.execCommand("copy");
-
-  // Remove the text element from the DOM
   document.body.removeChild(textElement);
 }
 
